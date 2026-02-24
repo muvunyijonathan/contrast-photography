@@ -311,6 +311,12 @@
             .hero-content h1 { font-size: 2.4rem; letter-spacing: 2px; }
             .hero-content p { font-size: 1.1rem; }
             .hero-buttons { flex-direction: column; align-items: center; }
+            /* Ajustements mobiles pour la sidebar */
+            .hero-card { padding: 1.8rem 1.2rem; }
+            .hero-card .hero-card-icon { width: 45px; height: 45px; font-size: 1.2rem; margin-bottom: 10px; }
+            .hero-card h4 { font-size: 1rem; }
+            .hero-card p { font-size: 0.85rem; margin-bottom: 15px; }
+            .btn-card { padding: 10px 20px; font-size: 0.8rem; }
             .section { padding: 70px 0; }
             .section-title h2 { font-size: 2.2rem; }
             .services-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
@@ -326,14 +332,19 @@
             .footer-contact-item { justify-content: center; }
             .social-links { justify-content: center; }
             .contact-form { padding: 30px 25px; }
+            /* Ajustement bouton header */
+            .header-container .btn { padding: 10px 18px; font-size: 0.75rem; }
         }
         @media (max-width: 480px) {
             .hero-content h1 { font-size: 1.9rem; }
+            .hero-card { padding: 1.5rem 1rem; }
             .section-title h2 { font-size: 1.8rem; }
             .service-card { padding: 35px 25px; }
             .portfolio-item { height: 240px; }
             .contact-info-item { flex-direction: column; text-align: center; padding: 20px; }
             .contact-icon { margin-right: 0; margin-bottom: 15px; }
+            .header-container .btn { display: none; } /* Cache le bouton Devis sur très petits écrans pour libérer de l'espace */
+            .logo { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -364,7 +375,7 @@
             <div class="hero-grid">
                 <div class="hero-content">
                     <h1>CONTRAST <span>Photography</span></h1>
-                    <p>Studio créatif à Goma spécialisé en photographie, vidéographie et impression professionnelle,. Donnez vie à vos projets avec notre expertise.</p>
+                    <p>Studio créatif à Goma spécialisé en impression professionnelle, photographie et vidéo. Donnez vie à vos projets avec notre expertise.</p>
                     <div class="hero-buttons">
                         <a href="#services" class="btn"><i class="fas fa-arrow-right"></i> Nos Services</a>
                         <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contactez-nous</a>
@@ -586,7 +597,7 @@
                     <h3>Contact</h3>
                     <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Goma, RDCongo</span></div>
                     <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+243 97 7244243</span></div>
-                    <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>myrrussel97@gmail.com.com</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>myrrussel97@gmail.com</span></div>
                 </div>
             </div>
             <div class="copyright"><p>&copy; 2026 <span>CONTRAST Photography</span>. Tous droits réservés.</p></div>
